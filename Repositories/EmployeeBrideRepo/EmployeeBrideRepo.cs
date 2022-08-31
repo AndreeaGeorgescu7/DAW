@@ -21,18 +21,7 @@ namespace TestDAW1.Repositories.EmployeeBrideRepo
            
         }
 
-      /* public async Task Create(EmployeeBridePackage shoeOrder)
-        {
-            await _context.EmployeeBridePackages.AddAsync(shoeOrder);
-            await _context.SaveChangesAsync();
-        }*/
 
-       /* public async Task Delete(EmployeeBridePackage shoeOrder)
-        {
-            _context.Remove(shoeOrder);
-            await _context.SaveChangesAsync();
-        }
-     */
         public async Task<List<EmployeeBridePackage>> GetAllBrideEmp()
         {
            //List<EmployeeBridePackage> parts = new List<EmployeeBridePackage>();
@@ -57,30 +46,5 @@ namespace TestDAW1.Repositories.EmployeeBrideRepo
          
 
         }
-/*
-        public async Task<IQueryable<EmployeeBridePackage>> GetAllQuery()
-        {
-            var query = _context.EmployeeBridePackages.AsQueryable();
-            return query;
-        }
-        public IQueryable<EmployeeBridePackage> GetFullList()
-        {
-            var query = _context.EmployeeBridePackages.Include(x => x.HairStylist).AsQueryable();
-            return query;
-        }
 
-        public async Task<EmployeeBridePackage> GetById(int id)
-        {
-            var shoeOrder = await _context.EmployeeBridePackages.FindAsync(id);
-            return shoeOrder;
-        }
-
-        public async Task Update(EmployeeBridePackage shoeOrder)
-        {
-            _context.EmployeeBridePackages.Update(shoeOrder);
-            await _context.SaveChangesAsync();
-        }
-
-        
-   */ }
 }
